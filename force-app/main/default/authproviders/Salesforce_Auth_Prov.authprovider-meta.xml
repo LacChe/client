@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://creative-goat-ki9xhq-dev-ed.my.salesforce.com/services/oauth2/authorize</authorizeUrl>
+    <consumerKey>3MVG9riCAn8HHkYWDYkZQ5rxEp1ewoZzAWeZZfVMbYVfRrWQRAMDFNtbgAuECgxQJmi0gAEn6eBQlqpV5aTRy</consumerKey>
+    <consumerSecret>SmLtaQLK1aIe7GQrD7IuqIIF02poT8nglSNDzvzIKyVKDeMJbfVnCSjXQksiLHxq+DD5IUE9+H0nJSdCzxUegnBBGPdiC2rX</consumerSecret>
+    <defaultScopes>refresh_token full</defaultScopes>
+    <executionUser>lacche96@cunning-otter-ppscw3.com</executionUser>
+    <friendlyName>Salesforce Auth Prov</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <registrationHandler>AutocreatedRegHandler1659844495733</registrationHandler>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://creative-goat-ki9xhq-dev-ed.my.salesforce.com/services/oauth2/token</tokenUrl>
+</AuthProvider>

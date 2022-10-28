@@ -1,0 +1,58 @@
+<template>
+	<lightning-card title="Contacts From creative-goat-ki9xhq">
+
+		<!-- Datatable of contacts from server -->
+        <div class="slds-var-m-around_medium slds-box slds-box_xx-small">
+			<!-- Ignore mobile incompatability -->
+			<!-- sldsValidatorIgnoreNextLine -->
+			<lightning-datatable
+				key-field="id"
+				max-row-selection="1"
+				data={serverContactList}
+				columns={tableColumns}
+				onrowselection={getRowData}
+				selected-rows={selectedRows}>
+			</lightning-datatable>
+		</div>
+
+		<div class="page_number slds-align_absolute-center">
+			Page: {offset}
+		</div>
+
+		<!-- Buttons -->
+		<div class="slds-grid slds-var-m-around_medium">
+			
+			<!-- Prev Page button on the left -->
+			<div class="slds-col slds-clearfix">
+				<lightning-button 
+					class="slds-float_left prev_page_button"
+					name="prevPage"
+					label="Prev Page"
+					onclick={handlePrevPage}>
+				</lightning-button>
+			</div>
+
+			<!-- Refresh button in the center -->
+			<div class="slds-col">
+				<lightning-button 
+					class="refresh_button slds-align_absolute-center"
+					name="refreshList"
+					label="Refresh"
+					onclick={refresh}>
+				</lightning-button>
+			</div>
+
+			<!-- Next Page button on the right -->
+			<div class="slds-col slds-clearfix">
+				<lightning-button 
+					class="slds-float_right next_page_button"
+					name="nextPage"
+					label="Next Page"
+					onclick={handleNextPage}>
+				</lightning-button>
+			</div>
+
+		</div>
+
+	</lightning-card>
+</template>

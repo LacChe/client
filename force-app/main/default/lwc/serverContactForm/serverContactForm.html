@@ -1,0 +1,59 @@
+<template>
+    <lightning-card if:true={renderInputs} title="Contact Record Form">
+
+		<!-- Input fields -->
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                class="record_id_input"
+                name="recordId"
+                label="Record Id"
+                type="text"
+                value={fields.recordId}
+                onchange={formUpdated}>
+            </lightning-input>
+            <lightning-input 
+                class="first_name_input"
+                name="firstName"
+                label="First Name"
+                type="text"
+                value={fields.firstName}
+                onchange={formUpdated}>
+            </lightning-input>
+            <lightning-input 
+                class="last_name_input"
+                name="lastName"
+                label="Last Name"
+                type="text"
+                value={fields.lastName}
+                onchange={formUpdated}>
+            </lightning-input>
+            <lightning-input
+                class="phone_input"
+                name="phone"
+                label="Phone"
+                type="tel"
+                value={fields.phone}
+                onchange={formUpdated}>
+            </lightning-input>
+        </div>
+
+		<!-- Buttons -->
+        <div class="slds-clearfix slds-var-m-around_medium">
+            <lightning-button
+                class="slds-float_left submit_button"
+                name="submitButton"
+                label={buttonLabel}
+                variant="brand"
+                onclick={submit}>
+            </lightning-button>
+            <lightning-button
+                class="slds-float_right delete_button"
+                name="deleteButton"
+                label="Delete"
+                variant="destructive"
+                onclick={deleteRecord}>
+            </lightning-button>
+        </div>
+        
+    </lightning-card>
+</template>
