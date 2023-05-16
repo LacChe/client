@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>lacche96@gmail.com</contactEmail>
+    <label>ApexRestWebService</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost</callbackUrl>
+        <consumerKey>3MVG9riCAn8HHkYWDYkZQ5rxEp46CWgJVZWgyet9305l7N4Dhb3pYUMhri6e1Dgr.wVE0wdXj6Vi2F2hXj5yj</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
